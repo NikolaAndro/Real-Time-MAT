@@ -295,7 +295,7 @@ def init_comet(args, project_name="MAT-attack"):
     '''
     experiment = Experiment(api_key=config.COMET_APIKEY,
                             project_name=project_name,
-                            workspace="nikolaandro",
+                            workspace="",
                             auto_param_logging=False, auto_metric_logging=False,
                             parse_args=False, display_summary=False, disabled=False)
     experiment.log_parameters(vars(args))
