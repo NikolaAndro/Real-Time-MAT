@@ -107,8 +107,6 @@ def mtask_forone_advacc(val_loader, model, criterion, task_names, args, info, ep
             print(len(adv_img))
             # print(batch_metrics)
             step_metrics.update(batch_metrics)
-            
-            #NIKOLA : This is where I need to call MAT ATTACK
         
         elif args.dataset == 'cityscape':
             adv_img = PGD_attack_mtask_city(input_batch, target_batch, mask_batch, model, criterion, task_names, args.epsilon, args.steps,
@@ -131,7 +129,6 @@ def mtask_forone_advacc(val_loader, model, criterion, task_names, args, info, ep
                 target_batch[keys] = tar.cuda()
 
         # print("diff", torch.sum(torch.abs(raw_input-image_var)))
-        #NIKOLA: forward pass / evaluate
         with torch.no_grad():
             output = model(image_var)
             adv_output = model(adv_image_var)
