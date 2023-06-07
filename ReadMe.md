@@ -1,4 +1,4 @@
-# MAT: MULTI-OBJECTIVE ADVERSARIAL ATTACK ON MULTI-TASK DEEP NEURAL NETWORKS BASED ON GENETIC ALGORITHMS by Nikola Andrić & Venkata Sriram Siddhardh Nadendla
+# MAT: A Real-Time Multi-Objective Adversarial Attack on Multi-Task Deep Neural Networks
 
 ![model](images/model-white-bck.png)
 
