@@ -48,13 +48,15 @@ Update the path to the taskonomy dataset  Update **TASKONOMY_DATASET** in `confi
 
 8. Update `config.py`.
 
-9. Navigate to `MAT-Attack/learning/MAT_learning/` and run the following line for 1 iteration training and validation on a single image.
+9. Navigate to MAT_utils/utils_aux_MAT_attack.py and add your workspace name as default to Experiment() in line 298.
+
+10. Navigate to `MAT-Attack/learning/MAT_learning/` and run the following line for 1 iteration training and validation on a single image.
 
         CUDA_VISIBLE_DEVICES=0 python3 train_MAT_attack_generator.py
 
-10. To make modifications such as number of epochs, batch size, and so on, see the available arguments on top of `train_MAT_attack_generator.py`.
+11. To make modifications such as number of epochs, batch size, and so on, see the available arguments on top of `train_MAT_attack_generator.py`.
 
-11. To run more than 1 iteration of the algorithm, make sure you attach the following argument: `--single_img_tests False` to the command in step 9.
+12. To run more than 1 iteration of the algorithm, make sure you attach the following argument: `--single_img_tests False` to the command in step 9.
 
 ## ACKNOWLEDGEMENT
 
